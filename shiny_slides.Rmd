@@ -11,8 +11,8 @@ output:
 
 ## First Things First
 
-* Slides are available at http://www.erichare.me/shiny-presentation
-* Let's go to GitHub and download some files: http://www.github.com/erichare/shiny-presentation
+- Slides are available at http://www.erichare.me/shiny-presentation
+- Let's go to GitHub and download some files: http://www.github.com/erichare/shiny-presentation
 
 ## What is Shiny?
 
@@ -93,3 +93,33 @@ shinyServer(function(input, output) {
 Can we add a new option to change the color of the bars?
 
 http://shiny.rstudio.com/gallery/widget-gallery.html
+
+## List of Inputs
+
+- `checkboxGroupInput` - A group of check boxes
+- `checkboxInput` -	A single check box
+- `dateInput` -	A calendar to aid date selection
+- `numericInput` - A field to enter numbers
+- `radioButtons` -A set of radio buttons
+- `selectInput` - A box with choices to select from
+- `sliderInput` - A slider bar
+- `textInput` - A field to enter text
+
+## List of Outputs
+
+- `renderImage` -	images (saved as a link to a source file)
+- `renderPlot` -	plots
+- `renderPrint` -	any printed output
+- `renderTable` -	data frame, matrix, other table like structures
+- `renderText` -	character strings
+- `renderUI` - a Shiny tag object or HTML
+
+## Widget Gallery
+
+http://shiny.rstudio.com/gallery/widget-gallery.html
+
+## Challenge #1:
+
+- Add an option that allows the user to specify the **border color**
+- (More Challenging) Allow the user to **choose a dataset**.
+- (More Challenging) Add a new **table output** which will display the the **first n rows of the dataset selected**. The number of rows should be specified as an input.
