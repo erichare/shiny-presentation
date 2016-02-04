@@ -9,6 +9,11 @@ output:
         transition: fade
 ---
 
+## First Things First
+
+* Slides are available at http://www.erichare.me/shiny-presentation
+* Let's go to GitHub and download some files: http://www.github.com/erichare/shiny-presentation
+
 ## What is Shiny?
 
 **Shiny** is an R package that allows you to easily create interactive web applets using R. 
