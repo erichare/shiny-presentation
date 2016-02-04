@@ -13,7 +13,7 @@ ui <- shinyUI(
   )
 )
 
-server <- function(input, output, server){
+server <- function(input, output, session){
   
   # reactives
   rct_random <- reactive({
