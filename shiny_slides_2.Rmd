@@ -4,7 +4,7 @@ author: "Eric Hare, Alex Shum"
 date: "February 11, 2016"
 output: 
     revealjs::revealjs_presentation:
-        theme: white
+        theme: blood
         highlight: pygments
         transition: fade
 ---
@@ -15,8 +15,8 @@ output:
 
 ## Challenge #2
 
-- Add a new **table output** which will display the the **first n rows of the dataset selected**. The number of rows should be specified as an input. (Hint: To display the table, in the ui you will use tableOutput, and in the server you will use renderTable)
-- Modify the **plot** to only show the **first n rows of the dataset**
+- Add a new **table output** which will display the **first n rows of the `faithful` data**. The number of rows should be specified as an input. (Hint: To display the table, in the ui you will use tableOutput, and in the server you will use renderTable)
+- Modify the **plot** to only show the **first n rows of the second column of the faithful data**
 
 ## Reactivity
 
