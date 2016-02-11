@@ -1,5 +1,5 @@
 ---
-title: "Introduction to Shiny"
+title: "Some More Shiny"
 author: "Eric Hare, Alex Shum"
 date: "February 11, 2016"
 output: 
@@ -11,7 +11,6 @@ output:
 
 ## First Things First
 
-- Slides are available at http://www.erichare.me/shiny-presentation
 - Let's go to GitHub and download some files: http://www.github.com/erichare/shiny-presentation
 
 ## Challenge #2
