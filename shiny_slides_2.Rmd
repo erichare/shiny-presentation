@@ -1,0 +1,43 @@
+---
+title: "Introduction to Shiny"
+author: "Eric Hare, Alex Shum"
+date: "February 11, 2016"
+output: 
+    revealjs::revealjs_presentation:
+        theme: white
+        highlight: pygments
+        transition: fade
+---
+
+## First Things First
+
+- Slides are available at http://www.erichare.me/shiny-presentation
+- Let's go to GitHub and download some files: http://www.github.com/erichare/shiny-presentation
+
+## Challenge #2
+
+- Add a new **table output** which will display the the **first n rows of the dataset selected**. The number of rows should be specified as an input. (Hint: To display the table, in the ui you will use tableOutput, and in the server you will use renderTable)
+- Modify the **plot** to only show the **first n rows of the dataset**
+
+## Reactivity
+
+Note that we had to subset the data in BOTH the *renderTable* and the *renderPlot* functions. This works fine here, but if it was a slow computation, we wouldn't want to do it twice...
+
+... Fortunately, we can use a reactive expression to compute the subsetted dataset.
+
+## Reactive Expressions
+
+- Reactive expressions are R expressions that depend on inputs
+- They will execute only when needed (an output depends on it, an input used in it changes, etc...)
+- Reactive expressions can return any regular R object
+
+Let's take a look...
+
+## Challenge #3
+
+- Add a new **selectInput** which allows the user to choose between the "faithful" and the "iris" datasets.
+- Modify our new reactive expression to return the selected dataset. 
+
+**Hint: The select input returns a string such as "iris", when in fact we want the R object iris. Use the `get()` function to return the object from the string.**
+
+## Alex's Turn
